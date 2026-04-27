@@ -4,7 +4,7 @@
 
 ---
 
-> **X Thermals Engine** is a root module designed to balance performance, temperature, and battery behavior across different usage styles.  
+> **X Thermals** is a root module designed to balance performance, temperature, and battery behavior across different usage styles.  
 > It provides profile-based control with a clean WebUI and boot-persistent behavior for daily use, gaming, and battery saving.
 
 ---
