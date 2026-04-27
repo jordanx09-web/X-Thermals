@@ -1,61 +1,103 @@
-<div align="center">
-
 # ❄️ X Thermals Engine
 
-**Advanced thermal management and performance optimization via a built-in WebUI.**
-
-[![Version](https://img.shields.io/badge/Version-V3.0-blue.svg?style=for-the-badge&logo=android)](https://github.com/jordanx09-web/X-Thermals-Engine/releases)
-[![Magisk Support](https://img.shields.io/badge/Magisk-Supported-00b14f.svg?style=for-the-badge&logo=magisk)](#)
-[![KernelSU Support](https://img.shields.io/badge/KernelSU-Supported-222222.svg?style=for-the-badge&logo=linux)](#)
-[![Telegram](https://img.shields.io/badge/Telegram-Community-2CA5E0.svg?style=for-the-badge&logo=telegram)](https://t.me/jordanxgc)
-
-</div>
+**Advanced thermal and performance management module with WebUI control.**
 
 ---
 
-> **X Thermals Engine** is a powerful root module designed to give you absolute control over your device's temperature and performance. Featuring a sleek, glassmorphism WebUI, it dynamically balances power draw, CPU loads, and thermals to deliver the exact experience you need, right when you need it.
+> **X Thermals Engine** is a root module designed to balance performance, temperature, and battery behavior across different usage styles.  
+> It provides profile-based control with a clean WebUI and boot-persistent behavior for daily use, gaming, and battery saving.
 
-## 🚀 Performance Modes
+---
 
-| Mode | Description |
-| :--- | :--- |
-| 🎮 **Gaming** | Unlocks peak CPU/GPU frequencies with aggressive throttle suppression for maximum FPS. |
-| ⚖️ **Balanced** | Intelligent resource management optimized for everyday smooth operation. |
-| 🔋 **Power Save** | Minimizes power draw and heat output for extended battery life and cool operation. |
-| 🧠 **AI Mode** | Dynamically switches profiles in real-time based on battery level, temperature, screen state, and CPU load. |
+## 🚀 Features
 
-## ✨ V3 Highlights
+- 🎮 **Gaming Mode**  
+  Unlocks high performance CPU/GPU behavior for maximum smoothness and FPS.
 
-- **🌡️ Strict Thermal Ceiling:** Enforces a hard 40°C limit at the config level for sustained, safe performance.
-- **🤖 Refined AI Engine:** Upgraded decision tree featuring a priority override when your battery drops below 30%.
-- **🎨 Glassmorphism WebUI:** A beautifully redesigned interface with live indicators and boot-persistent profile restoration.
-- **🛠️ Rock-Solid Stability:** Fully resolved sysfs read errors and system execution bugs for a flawless user experience.
+- ⚖️ **Balanced Mode**  
+  Optimized daily profile for stable performance and controlled thermals.
+
+- 🔋 **Power Save Mode**  
+  Prioritizes lower heat and reduced battery drain for longer usage time.
+
+- 🧠 **AI Mode**  
+  Automatically switches profiles using battery level, charging state, load, temperature, and screen activity.
+
+- 🌐 **Built-in WebUI**  
+  Clean interface for changing modes quickly without editing files manually.
+
+- 🔁 **Boot Persistence**  
+  Selected behavior is automatically re-applied after reboot.
+
+- 🛠️ **Cross Root Support**  
+  Compatible module workflow for **Magisk**, **KernelSU**, and **APatch**.
+
+---
+
+## 📦 Requirements
+
+- Rooted Android device
+- One of:
+  - Magisk
+  - KernelSU
+  - APatch
+- Recommended: recent Android/HyperOS build
+
+---
 
 ## 📥 Installation
 
-<details>
-<summary><b>Click here to view installation steps</b></summary>
-<br>
+1. Download the latest `X-Thermals` module zip.
+2. Open your root manager (**Magisk / KernelSU / APatch**).
+3. Go to **Modules**.
+4. Select **Install from storage**.
+5. Flash the zip.
+6. Reboot device.
+7. Open the module WebUI and select your preferred mode.
 
-1. Download the latest `X-Thermals-Engine-v3.0.zip` from the [Releases](https://github.com/jordanx09-web/X-Thermals-Engine/releases) page.
-2. Open your preferred root manager (**Magisk**, **KernelSU**, or **APatch**).
-3. Navigate to the **Modules** tab and select **Install from storage**.
-4. Flash the zip file and wait for the process to complete.
-5. **Reboot** your device.
-6. Open the newly installed WebUI to configure your governor and monitor thermals!
+---
 
-</details>
+## 🧭 Usage
 
-## 🤝 Connect & Support
+- Choose one profile from WebUI:
+  - `gaming`
+  - `balanced`
+  - `powersave`
+  - `ai`
+- Changes are applied by the background service.
+- Reboot is recommended after first install for full initialization.
 
-Developed with ❤️ by **Jordanx_09**
+---
 
-<div align="center">
-  <a href="https://github.com/jordanx09-web">
-    <img src="https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge&logo=github" alt="GitHub Profile" />
-  </a>
-  <a href="https://t.me/jordanxgc">
-    <img src="https://img.shields.io/badge/Telegram-Join_Community-2CA5E0?style=for-the-badge&logo=telegram" alt="Telegram Community"
-    />
-  </a>
-</div>
+## ⚠️ Important Notes
+
+- Thermal and power behavior depends on kernel + ROM implementation.
+- Some OEM thermal components may be encrypted/closed-source.
+- Real-world results vary by chipset, ambient temperature, charger type, and battery health.
+- Always test new settings gradually.
+
+---
+
+## 🧪 Troubleshooting
+
+- If mode changes are not applying:
+  - Reboot once
+  - Re-open WebUI and re-select mode
+- If behavior seems inconsistent:
+  - Check service log:
+    - `/data/local/tmp/xthermals.log`
+- If needed, clean flash module and reboot again.
+
+---
+
+## 🔒 Disclaimer
+
+This module changes low-level thermal/performance behavior.  
+Use at your own risk. The author is not responsible for device damage, overheating, data loss, or misuse.
+
+---
+
+## 🤝 Credits
+
+Developed by **Jordanx_09**  
+Community and updates via GitHub and Telegram.
