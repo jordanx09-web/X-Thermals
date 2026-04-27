@@ -1,4 +1,4 @@
-# ❄️ X Thermals Engine
+# ❄️ X Thermals
 
 **Advanced thermal and performance management module with WebUI control.**
 
